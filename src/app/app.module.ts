@@ -7,6 +7,7 @@ import { LoginHeaderComponent } from './components/Before-login/login-header/log
 import { LoginFooterComponent } from './components/Before-login/login-footer/login-footer.component';
 import { LoginPageComponent } from './components/Before-login/login-page/login-page.component';
 import { RegisterPageComponent } from './components/Before-login/register-page/register-page.component';
+import { MaterialExampleModule } from './../../material.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { RegisterPageComponent } from './components/Before-login/register-page/r
     LoginPageComponent,
     RegisterPageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, MaterialExampleModule],
   providers: [],
   bootstrap: [AppComponent],
 })

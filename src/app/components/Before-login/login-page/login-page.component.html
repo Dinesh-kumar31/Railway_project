@@ -1,11 +1,26 @@
 <app-login-header>
 </app-login-header>
-<div class="row">
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+    <img class="img-fluid" src="../../../../assets/stock-vector-railway-station-isometric-composition-with-passenger-platforms-staircase-tunnel-entrance-rail-bus-1310170123.jpg  " alt="">
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <h3>Login </h3>
+    <form (submit)="$event.preventDefault()">
+    <mat-form-field appearance="fill">
+      <mat-label>First name</mat-label>
+      <input matInput #first>
+    </mat-form-field>
+    </form>
+      </mat-grid-tile>
+
+</mat-grid-list>
+<!-- <div class="row">
     <div class="col-lg-6 col-md-6">
         <img class="img-fluid" src="../../../../assets/stock-vector-railway-station-isometric-composition-with-passenger-platforms-staircase-tunnel-entrance-rail-bus-1310170123.jpg  " alt="">
     </div>
 
-    <div class="col-md-6 text-center my-auto">
+    <div class="col-md-6 text-center">
         <h3>Login</h3>
         <div class="col-md-8 col-8 container">
             <form action="">
@@ -17,12 +32,13 @@
                     <input type="password" class="form-control" id="password" placeholder="Password" autocomplete="off">
                     <label for="password" class="form-label">Password</label>
                 </div>
-                <div>
-                    <button class="btn btn-small btn-success">Login</button>
+                <div class="example-button-row">
+                  <button mat-button color="primary">Login</button>
+
                 </div>
             </form>
         </div>
     </div>
-</div>
+</div> -->
 
 <app-login-footer></app-login-footer>
